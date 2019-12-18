@@ -295,6 +295,6 @@ As an example::
  Memory Utilized: 4.06 GB
  Memory Efficiency: 10.39% of 39.06 GB
 
-The above job was very good at requesting computing cores. On the opposite site
-40 GB of RAM was requested (and were therefore *reserved* throughout all the time
-the job was running!) but just 4 GB were needed...
+The above job was very good at requesting computing cores. On the opposite side
+40 GB of RAM was requested (and were therefore *reserved* throughout job 
+execution!) but just above 4 GB were needed...
