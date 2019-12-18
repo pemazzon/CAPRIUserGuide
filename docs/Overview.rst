@@ -19,3 +19,14 @@ catalog can be extended by:
     user group, by using the `CAPRI Helpdesk System <https://capri.dei.unipd.it/helpdesk/>`_ 
   * Installing your own software from source or using the SPACK package manager
   * Installing your software(s) inside a *Singularity* container
+
+Acknowledge the CAPRI platform / Scientific citations
+-----------------------------------------------------
+
+Please remember that, as a user, it is your duty to acknowledge CAPRI 
+on your publications whenever the infrastructure will be employed.
+
+The following quote can be used:
+
+  University of Padova Strategic Research Infrastructure Grant 2017:
+  “CAPRI: Calcolo ad Alte Prestazioni per la Ricerca e l’Innovazione”
