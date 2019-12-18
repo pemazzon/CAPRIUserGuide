@@ -256,4 +256,46 @@ Alternatively if you want to remove **all your jobs** from the queue you can use
 
 .. caution:: there are no confirmation prompts.
 
+Job accounting
+^^^^^^^^^^^^^^
+
+Upon job completion you might want to checkout some information on resources you used.
+For this the sacct command can be used::
+
+ sacct -o reqmem,maxrss,averss,elapsed –j <job_id>
+
+Other options can be used. To see a full list consult ``man sacct`` on the frontend node
+or the `web version <https://slurm.schedmd.com/sacct.html>`_ 
+
+Job efficiency
+^^^^^^^^^^^^^^
+
+Job efficiency measures how precisely you requested the computing resources. **This is a
+parameter you should not underestimate.** In fact:
+
+  - If you request too few resources your job will likely crash;
+  - If you request too much resources you will likely **wait a lot** for your job to start or,
+    **worse**, you will reserve for yourself resources you will never use. This has a
+    negative impact on other users.
+
+Check the job efficiency of a completed job issuing::
+
+ seff JOBID
+
+As an example::
+
+ [admin@capri~] seff 54321
+ Job ID: 54321
+ Cluster: capri
+ User/Group: admin/admin
+ State: COMPLETED (exit code 0)
+ Cores: 1
+ CPU Utilized: 00:48:40
+ CPU Efficiency: 98.68% of 00:49:19 core-walltime
+ Memory Utilized: 4.06 GB
+ Memory Efficiency: 10.39% of 39.06 GB
+
+The above job was very good at requesting computing cores. On the opposite site
+40 GB of RAM was requested (and were therefore *reserved* throughout all the time
+the job was running!) but just 4 GB were needed...
 
