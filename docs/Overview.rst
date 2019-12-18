@@ -24,7 +24,7 @@ Acknowledge the CAPRI platform / Scientific citations
 -----------------------------------------------------
 
 Please remember that, as a user, it is your duty to acknowledge CAPRI 
-on your publications whenever the infrastructure will be employed.
+on your publications whenever the infrastructure is employed.
 
 The following quote can be used:
 
