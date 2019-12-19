@@ -14,6 +14,7 @@ CAPRI User Guide
    AccessThePlatform
    UsingSLURM
    SLURMExamples
+   TroubleshootingSLURM
    UsingSingularity
    BestPractices
 
