@@ -90,6 +90,50 @@ GPU Job
    DO NOT request GPU if you don't use them!
 
 
+Singularity Job
+---------------
+
+.. _singularityjob:
+
+::
+
+  #!/bin/bash
+  #SBATCH --job-name=mysingularity
+  #SBATCH --error=opencv.%j.err
+  #SBATCH --output=opencv.%j.out
+  #SBATCH --partition=allgroups
+  #SBATCH --ntasks=1
+  #SBATCH --mem=1G
+  #SBATCH --time=00:05:00
+  
+  cd $SLURM_SUBMIT_DIR
+  
+  srun singularity exec ./mysingularity.sif python script.py
+
+Singularity job using GPU
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _singuGpujob:
+
+::
+
+  #!/bin/bash
+  #SBATCH -J SingGPU
+  #SBATCH -o output_%j.txt
+  #SBATCH -e errors_%j.txt
+  #SBATCH -t 01:30:00
+  #SBATCH -n 1
+  #SBATCH -p allgroups
+  #SBATCH –mem 640G
+  # requesting 1 GPU; set --gres=gpu:2 to use both GPUs
+  #SBATCH --gres=gpu:1
+
+  cd $SLURM_SUBMIT_DIR
+  
+  srun singularity exec --nv ./tensorflow.sif python script.py
+
+.. important::
+   You must request (at least) one GPU and **you must pass the -\\-nv** flag to singularity
 
 
 * Singularity job
