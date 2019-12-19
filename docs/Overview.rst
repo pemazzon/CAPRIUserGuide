@@ -7,7 +7,9 @@ Overview of the CAPRI Platform
 
 It consists of a frontend node and a HPE Superdome Flex system equipped with
 
+  * 16 CPU Intel(R) Xeon(R) Gold 6130 @ 2.10GHz
   * 6 TB of RAM
+  * 2 GPU NVIDIA Tesla P100 16GB
   * 40 TB of disk space
 
 Access to the computing resources is regulated through the SLURM scheduler.
