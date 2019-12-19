@@ -60,8 +60,38 @@ OpenMP job
      OpenMP set ``-n`` to the number of MPI tasks. The total number of slots
      requested, in any case, will be ``n*c``
 
+GPU Job
+-------
+
+.. _gpujob:
+
+::
+
+  #!/bin/bash
+  #SBATCH -J helloGPU
+  #SBATCH -o output_%j.txt
+  #SBATCH -e errors_%j.txt
+  #SBATCH -t 01:30:00
+  #SBATCH -n 1
+  #SBATCH -p allgroups
+  #SBATCH –mem 640G
+  # requesting 1 GPU; set --gres=gpu:2 to use both GPUs
+  #SBATCH --gres=gpu:1
+
+  cd $SLURM_SUBMIT_DIR
   
-* GPU job
+  srun ./GPUhello
+
+.. note::
+   CAPRI is equipped with 2 GPUs: request both **only** if your program is
+   capable of using more than one GPU at a time.
+
+.. important::
+   DO NOT request GPU if you don't use them!
+
+
+
+
 * Singularity job
 * Interactive job
 
