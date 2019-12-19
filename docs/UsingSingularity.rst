@@ -1,5 +1,5 @@
-What is Singularity?
---------------------
+Using Singularity
+-----------------
 
 .. _whatsingularity:
 
@@ -10,7 +10,7 @@ almost everithing, from the operative system up, can be customized and
 run regardless the hosting OS.
 
 Why singularity?
-----------------
+^^^^^^^^^^^^^^^^
 
   * Singularity can run your choice of operative system;
   * Singularity can import your Docker images without superuser privileges 
