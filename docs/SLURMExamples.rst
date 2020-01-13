@@ -134,8 +134,3 @@ Singularity job using GPU
 
 .. important::
    You must request (at least) one GPU and **you must pass the -\\-nv** flag to singularity
-
-
-* Singularity job
-* Interactive job
-
