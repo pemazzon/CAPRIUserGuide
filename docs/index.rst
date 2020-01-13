@@ -11,11 +11,14 @@ CAPRI User Guide
    :numbered: 
 
    Overview
-   AccessThePlatform
    UsingSLURM
    SLURMExamples
    TroubleshootingSLURM
    UsingSingularity
+   SingularityExamples
+
+
+.. AccessThePlatform
    BestPractices
 
 Indices and tables
