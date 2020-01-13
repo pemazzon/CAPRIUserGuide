@@ -12,7 +12,7 @@ Tensorflow + python packages
 Description
 """""""""""
 
-One of the projects required a tensorflow installation plus some other 
+One of the projects required a `tensorflow <https://www.tensorflow.org/>`_ installation plus some other 
 softwares for computer vision. Instead of installing everithing system-wide
 a singularity file was built by customizing a docker image.
 
@@ -68,7 +68,7 @@ Reuse and customize a local image
 Description
 """""""""""
 
-A project required a Torch installation to perform som deep learning task.
+A project required a `Torch <https://pytorch.org/>`_ installation to perform som deep learning task.
 Since a tensorflow image was available locally we custimized that one instead
 of starting from scratch.
 
