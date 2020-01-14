@@ -111,7 +111,7 @@ Singularity Job
   srun singularity exec ./mysingularity.sif python script.py
 
 Singularity job using GPU
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 .. _singuGpujob:
 
