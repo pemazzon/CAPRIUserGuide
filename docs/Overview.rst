@@ -1,20 +1,20 @@
 Overview of the CAPRI Platform
 ==============================
 
-.. _overview
+.. _overview:
 
 **CAPRI** (Calcolo ad Alte Prestazioni per la Ricerca e l'Innovazione) is a computing platform.
 
 It consists of a frontend node and a HPE Superdome Flex system equipped with
 
-  * 16 CPU Intel(R) Xeon(R) Gold 6130 @ 2.10GHz
+  * 16 Intel(R) Xeon(R) Gold 6130 @ 2.10GHz CPU
   * 6 TB of RAM
-  * 2 GPU NVIDIA Tesla P100 16GB
+  * 2 NVIDIA Tesla P100 16GB GPU
   * 40 TB of disk space
 
 Access to the computing resources is regulated through the SLURM scheduler.
 
-The system is equipped with some *system* software managed by the administrators. The softwaree 
+The system is equipped with some *system* software managed by the administrators. The software 
 catalog can be extended by:
 
   * Requesting the installation *system wide*, if the software is considered useful for a large

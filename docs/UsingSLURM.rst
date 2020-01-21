@@ -25,7 +25,7 @@ jobs, job time limit, etc.).
 CAPRI has 2 partitions:
 
   * **allgroups**: partition to run both serial and parallel
-    software. This partition should be used to run not
+    software. This partition **should not** be used to run
     interactive software;
   * **interactive**: partition to run software in an
     interactive way. This partition has limited resources
@@ -33,6 +33,7 @@ CAPRI has 2 partitions:
     should be shorter than 24 hours.
 
 Which partition should I use?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The great majority of CAPRI users should use the
 allgroups partition. Typical serial and parallel software
@@ -167,8 +168,8 @@ A more complete job
   notified via email.
 
 -\\-mail-type ALL 
-  Notify user by email when certain event types occur. See the *srun* manual page on the frontend node
-  (issuing a ``man srun`` at the command prompt) for a complete list.
+  Notify user by email when certain event types occur. The event list can be seen on the *srun* manual page 
+  on the frontend node (issuing a ``man srun`` at the command prompt).
 
 
 SLURM Interaction
@@ -196,7 +197,7 @@ e.g.: ``sbatch test.slurm``. Upon (successful) job submission, you will get a me
 
 Here 129744 is the JOBID. This number can be used to check for the job progress, to remove it from
 the execution queue or for other operations. You can read the sbatch documentation using ``man sbatch``
-from the frontend node or visiting the relative `web page <https://slurm.schedmd.com/sbatch.html>`_
+from the frontend node or visiting the `sbatch web page <https://slurm.schedmd.com/sbatch.html>`_
 
 Options specified inside the job file (after the ``#SBATCH`` directives) can be overridden or
 modified on the command line, e.g.:
@@ -228,7 +229,7 @@ or you can check a single job providing the JOBID
  squeue -j JOBID
 
 To see the complete list of output options and command flags use ``man squeue``
-from the frontend node or visit the relative `web page <https://slurm.schedmd.com/squeue.html>`_
+from the frontend node or visit the `squeue web page <https://slurm.schedmd.com/squeue.html>`_
 
 Checking running jobs
 ^^^^^^^^^^^^^^^^^^^^^
@@ -239,7 +240,7 @@ The status of jobs in a **running** state can be checked with::
 
 To see the complete list of output statistics (e.g. min/max/avg bytes read/written, min/max/avg CPU time, min/max/avg
 memory usage, etc.)  and command options use ``man sstat`` from the frontend node or 
-visit the relative `web page <https://slurm.schedmd.com/sstat.html>`_
+visit the `sstat web page <https://slurm.schedmd.com/sstat.html>`_
 
 Remove a job
 ^^^^^^^^^^^^
@@ -276,7 +277,7 @@ parameter you should not underestimate.** In fact:
   - If you request too few resources your job will likely crash;
   - If you request too much resources you will likely **wait a lot** for your job to start or,
     **worse**, you will reserve for yourself resources you will never use. This has a
-    negative impact on other users.
+    negative impact on other users too!
 
 Check the job efficiency of a completed job issuing::
 
