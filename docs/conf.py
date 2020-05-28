@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CAPRIUserGuide'
-copyright = u'2019, Paolo E. Mazzon <paoloemilio.mazzon@unipd.it>'
+copyright = u'2020, The CAPRI Support Team'
 author = u'Paolo E. Mazzon <paoloemilio.mazzon@unipd.it>'
 
 # The version info for the project you're documenting, acts as replacement for
