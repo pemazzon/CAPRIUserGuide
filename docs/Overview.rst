@@ -43,8 +43,10 @@ This guide is the result of many people's work. Their names are listed below alp
 
 If you find this listing is incomplete or contains errors  please send an email to <paoloemilio.mazzon@unipd.it>
 
+  * Agostino Andriolo <agostino.andriolo@unipd.it>
   * Vincenzo Agosto <vincenzo.agosto@unipd.it>
   * Giacomo Baruzzo <giacomo.baruzzo@unipd.it>
+  * Marco Filippi <marco.filippi@unipd.it>
   * Federico Giacomin <federico.giacomin@unipd.it>
   * Paolo Emilio Mazzon <paoloemilio.mazzon@unipd.it>
   * Matteo Menguzzato <matteo.menguzzato@unipd.it>
