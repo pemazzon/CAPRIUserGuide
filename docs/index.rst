@@ -11,6 +11,7 @@ CAPRI User Guide
    :numbered: 
 
    Overview
+   Contributors
    UsingSLURM
    SLURMExamples
    TroubleshootingSLURM
