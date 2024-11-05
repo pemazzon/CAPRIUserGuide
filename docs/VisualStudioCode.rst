@@ -1,6 +1,8 @@
 Connecting Visual Studio Code
 =============================
 
+.._vscode:
+
 If you are familiar with the editor Visual Studio Code by Microsoft 
 (from now on “VS Code”), it’s now possible to run it locally on your 
 computer, either on a browser tab or as a standalone program, while 
