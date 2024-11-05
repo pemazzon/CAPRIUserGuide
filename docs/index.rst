@@ -16,6 +16,7 @@ CAPRI User Guide
    TroubleshootingSLURM
    UsingSingularity
    SingularityExamples
+   VisualStudioCode
 
 
 .. AccessThePlatform
