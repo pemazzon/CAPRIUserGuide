@@ -40,8 +40,8 @@ Wait for the confirmation of allocation and then input:
 
   code tunnel  
 
-You will obtain a message like this: <br />
-__ Open this link in your browser https://vscode.dev/tunnel/hpcapri __. <br />
+You will obtain a message like this: 
+* *Open this link in your browser https://vscode.dev/tunnel/hpcapri* *. 
 Paste it and then:
 
     1. in the dropdown menu choose if you have a GitHub or a Microsoft Account;
