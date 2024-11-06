@@ -30,14 +30,13 @@ Once connected to **capri.dei.unipd.it** you can request an interactive session
 and from there the tunnel mode can be established:
 
 ::
-    ssh username@capri.dei.unipd.it
-    
-    interactive
+  ssh username@capri.dei.unipd.it
+  interactive
 
 wait for the confirmation of allocation
 
 ::
-    code tunnel
+  code tunnel
 
 You will obtain a message like this: Open this link in your browser https://vscode.dev/tunnel/hpcapri. 
 Paste it and then:
