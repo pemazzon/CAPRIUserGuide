@@ -6,11 +6,13 @@ Connecting Visual Studio Code
 If you are familiar with the editor Visual Studio Code by Microsoft 
 (from now on “VS Code”), it’s now possible to run it locally on your 
 computer, either on a browser tab or as a standalone program, while 
-executing your code on the server by linking the two executions 
-through an account and a tunnel. This makes it easy to debug code 
-that’s stored on your local machine and that can be conveniently 
-edited taking advantage of the local graphical interface. The results 
-of the execution will also be presented on the local instance.
+executing your code on the server: this is made possible by linking the 
+two executions through an account and a tunnel. It can be convenient 
+since you are going to use your local installation with its graphical 
+interface that makes easy to access your projects. The results of the 
+execution will also be presented on the local instance.
+
+This is a link to the **official Microsoft guide**: https://code.visualstudio.com/docs/remote/tunnels
 
 
 Procedure 
@@ -24,19 +26,26 @@ For this to work you need:
     • the extension “Remote - Tunnels” by Microsoft if the software is locally installed.
 
 
-Once connected to **capri.dei.unipd.it** an interactive session can be 
-requested with the command interactive and from there the tunnel 
-mode can be established:
+Once connected to **capri.dei.unipd.it** you can request an interactive session
+and from there the tunnel mode can be established:
 
-    ``code tunnel``
+::
+    ssh username@capri.dei.unipd.it
+    
+    interactive
 
-Subsequently you need to: 
+wait for the confirmation of allocation
 
-    1. choose the type of account you have;
-    2. click on the link to open it in a browser;
-    3. log in and input the code provided;
-    4. give a name to the machine for VS Code to identity it (default is “hpcapri”);
-    5. open the link provided in a browser.
+::
+    code tunnel
+
+You will obtain a message like this: Open this link in your browser https://vscode.dev/tunnel/hpcapri. 
+Paste it and then:
+
+    1. In the dropdown menu choose if you have a GitHub or a Microsoft Account;
+    2. log in and input the code if provided;
+    3. give a name to the machine for VS Code to identity it (default is “hpcapri”);
+    4. open the new link provided in a browser.
 
 This will connect your account between the browser and the instance of 
 VS Code on hpcapri. 
