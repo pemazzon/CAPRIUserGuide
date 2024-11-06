@@ -7,7 +7,7 @@ If you are familiar with the editor Visual Studio Code by Microsoft
 (from now on “VS Code”), it’s now possible to run it locally on your 
 computer, either on a browser tab or as a standalone program, while 
 executing your code on the server: this is made possible by linking the 
-two executions through an account and a tunnel. It can be convenient 
+two executions through an account and a tunnel. <br />It can be convenient 
 since you are going to use your local installation with its graphical 
 interface that makes easy to access your projects. The results of the 
 execution will also be presented on the local instance.
@@ -34,11 +34,14 @@ and from there the tunnel mode can be established:
   ssh username@capri.dei.unipd.it
   interactive
   
-wait for the confirmation of allocation
+Wait for the confirmation of allocation and then input:
 
-``code tunnel``
+::
 
-You will obtain a message like this: Open this link in your browser https://vscode.dev/tunnel/hpcapri. 
+  code tunnel  
+
+You will obtain a message like this: <br />
+__ Open this link in your browser https://vscode.dev/tunnel/hpcapri __. <br />
 Paste it and then:
 
     1. in the dropdown menu choose if you have a GitHub or a Microsoft Account;
